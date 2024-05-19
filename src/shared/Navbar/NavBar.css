@@ -1,0 +1,9 @@
+#sidebar  a.active{
+    border: 1px solid red;
+    font-weight: 500;
+}
+
+#sidebar  a{
+    font-size: large;
+}
+
