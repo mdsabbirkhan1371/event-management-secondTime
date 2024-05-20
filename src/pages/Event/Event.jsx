@@ -3,17 +3,19 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineDateRange } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-
+import './Event.css'
 
 const Event = ({event}) => {
 
     const {title,date,address,seat,img,id}=event;
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl font-semibold">
+        <div className="card w-96 bg-base-100 shadow-xl font-semibold  hover:translate-y-10 duration-500">
                         <figure>
-                            <img src={img} alt="Shoes" />
+                            <img className="" src={img} alt="Shoes" />
+                            
                         </figure>
+
                 <div className="card-body">
                     <div className="flex justify-between items-center">
                         <div className="flex items-center ">
