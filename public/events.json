@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "title": "Annual Business Conference",
+    "category": "Business",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md1.png"
+  },
+  {
+    "id": "2",
+    "title": "Business Networking Event",
+    "category": "Business",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md2.png"
+  },
+  {
+    "id": "3",
+    "title": "Corporate Strategy Meeting",
+    "category": "Business",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md3.png"
+  },
+  {
+    "id": "4",
+    "title": "Startup Pitch Competition",
+    "category": "Business",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md4.png"
+  },
+  {
+    "id": "5",
+    "title": "Tech Innovations Summit",
+    "category": "Technology",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md5.png"
+  },
+  {
+    "id": "6",
+    "title": "AI and Robotics Expo",
+    "category": "Technology",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md6.png"
+  },
+  {
+    "id": "7",
+    "title": "Cloud Computing Conference",
+    "category": "Technology",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md7.png"
+  },
+  {
+    "id": "8",
+    "title": "Cybersecurity Summit",
+    "category": "Technology",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md8.png"
+  },
+  {
+    "id": "9",
+    "title": "Healthcare Leadership Forum",
+    "category": "Healthcare",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md9.png"
+  },
+  {
+    "id": "10",
+    "title": "Medical Innovations Conference",
+    "category": "Healthcare",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md10.png"
+  },
+  {
+    "id": "11",
+    "title": "Pharmaceutical Expo",
+    "category": "Healthcare",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md11.png"
+  },
+  {
+    "id": "12",
+    "title": "Healthcare Technology Summit",
+    "category": "Healthcare",
+    "address": "1356 Broadway, New York",
+    "date": "2024-09-15",
+    "img": "/src/assets/events-picture/ev-md12.png"
+  }
+]
