@@ -30,6 +30,7 @@ const router = createBrowserRouter([
         {
             path:'/events',
             element:<Events></Events>
+            
         },
         {
             path:'/speaker',

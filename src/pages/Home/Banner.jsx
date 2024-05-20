@@ -32,7 +32,7 @@ const Banner = () => {
             </div>
 
             <div>
-                <div  className='bg-white md:w-3/4  p-5 mx-auto lg:absolute bottom-8 right-48'>
+                <div  className='bg-white md:w-3/4  p-5 mx-auto lg:absolute bottom-12 right-48'>
                     <div className='text-center space-x-2 sm:space-y-2'>
                         <input type="text" placeholder="Event Location...." className="input input-bordered input-md rounded-full  max-w-xs" />
                     <input type="date" placeholder="Date" className="input input-bordered input-md rounded-full  max-w-xs" />
