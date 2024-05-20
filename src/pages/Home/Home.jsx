@@ -2,10 +2,11 @@
 import Header from "../Header/Header";
 
 
+
 const Home = () => {
     return (
-        <div className="">
-            <Header></Header>          
+        <div>
+            <Header></Header>      
         </div>
     );
 };

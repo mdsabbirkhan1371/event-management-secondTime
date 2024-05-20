@@ -5,13 +5,14 @@ import Banner from "../Home/Banner";
 
 const Header = () => {
     return (
-        <div className="">
-            <div>
+            <div >
+                
                 <Banner></Banner>
-                <Events></Events>
+                <div className="mt-32">
+                    <Events></Events>
+                </div> 
             </div>
-            
-        </div>
+         
     );
 };
 
