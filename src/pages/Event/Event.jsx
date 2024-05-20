@@ -10,11 +10,13 @@ const Event = ({event}) => {
     const {title,date,address,seat,img,id}=event;
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl font-semibold  hover:translate-y-10 duration-500">
+        <div className="card w-96 bg-base-100 shadow-xl font-semibold  hover:translate-y-10 duration-700">
                         <figure>
-                            <img className="" src={img} alt="Shoes" />
-                            
+                            <img className="relative rounded-x-lg" src={img} alt="Shoes" />
                         </figure>
+                        
+                        <h3 className="bg-red-700 w-full p-4 rounded-b-lg absolute bottom-36 left-0 flex items-center font-medium">
+                          <MdEventSeat className="mr-2"></MdEventSeat>  Seat {seat}</h3>
 
                 <div className="card-body">
                     <div className="flex justify-between items-center">
@@ -31,7 +33,7 @@ const Event = ({event}) => {
                     <h2 className="card-title">{title}</h2>
                     
                         <div className="card-actions">
-                            <Link className="underline text-red-700">Book Now</Link>
+                            <Link to={`/booking/${id}`} className="underline text-red-700">Book Now</Link>
                         </div>
                 </div>
         </div>

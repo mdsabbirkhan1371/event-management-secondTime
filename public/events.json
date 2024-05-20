@@ -5,7 +5,8 @@
     "category": "Business",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md1.png"
+    "img": "/src/assets/events-picture/ev-md1.png",
+    "seat":500
   },
   {
     "id": "2",
@@ -13,7 +14,8 @@
     "category": "Business",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md2.png"
+    "img": "/src/assets/events-picture/ev-md2.png",
+    "seat":500
   },
   {
     "id": "3",
@@ -21,7 +23,8 @@
     "category": "Business",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md3.png"
+    "img": "/src/assets/events-picture/ev-md3.png",
+    "seat":500
   },
   {
     "id": "4",
@@ -29,7 +32,8 @@
     "category": "Business",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md4.png"
+    "img": "/src/assets/events-picture/ev-md4.png",
+    "seat":500
   },
   {
     "id": "5",
@@ -37,7 +41,8 @@
     "category": "Technology",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md5.png"
+    "img": "/src/assets/events-picture/ev-md5.png",
+    "seat":500
   },
   {
     "id": "6",
@@ -45,7 +50,8 @@
     "category": "Technology",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md6.png"
+    "img": "/src/assets/events-picture/ev-md6.png",
+    "seat":500
   },
   {
     "id": "7",
@@ -53,7 +59,8 @@
     "category": "Technology",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md7.png"
+    "img": "/src/assets/events-picture/ev-md7.png",
+    "seat":500
   },
   {
     "id": "8",
@@ -61,7 +68,8 @@
     "category": "Technology",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md8.png"
+    "img": "/src/assets/events-picture/ev-md8.png",
+    "seat":500
   },
   {
     "id": "9",
@@ -69,7 +77,8 @@
     "category": "Healthcare",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md9.png"
+    "img": "/src/assets/events-picture/ev-md9.png",
+    "seat":500
   },
   {
     "id": "10",
@@ -77,7 +86,8 @@
     "category": "Healthcare",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md10.png"
+    "img": "/src/assets/events-picture/ev-md10.png",
+    "seat":500
   },
   {
     "id": "11",
@@ -85,7 +95,8 @@
     "category": "Healthcare",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md11.png"
+    "img": "/src/assets/events-picture/ev-md11.png",
+    "seat":500
   },
   {
     "id": "12",
@@ -93,6 +104,7 @@
     "category": "Healthcare",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "/src/assets/events-picture/ev-md12.png"
+    "img": "/src/assets/events-picture/ev-md12.png",
+    "seat":500
   }
 ]
