@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
@@ -8,7 +8,27 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
-    const {signIn,setError,error}=useContext(AuthContext)
+    const {signIn,setError,error,resetPassword}=useContext(AuthContext)
+
+    const [email,setEmail]=useState('')
+
+    const handleChange =(e)=>{
+            const email = e.target.value;
+            setEmail(email)
+    }
+
+    const passwordReset=(email)=>{
+        if(!email){
+            return toast('Please Enter Your Email')
+        }
+        else{
+        resetPassword(email)
+        toast('Please Check Your Email')
+        }
+        
+    }
+
+
 
     const handleSignIn =(e)=>{
         e.preventDefault()
@@ -23,9 +43,17 @@ const Login = () => {
         signIn(email,password)
         .then(res=>{
             const user = res.user;
+            if(user.emailVerified ===false){
+                return toast('Please verify Your Email First')
+            }
+            else{
+                e.target.reset()
+                toast('Login Successful')
+            }
+
             console.log(user)
-            e.target.reset()
-            toast('Login Successful')
+            console.log(user)
+            
             
         })
         .catch(error=>{
@@ -43,7 +71,7 @@ const Login = () => {
                     <label className="label">
                         <span className="label-text">Email</span>
                     </label>
-                    <input type="email" name="email" placeholder="email" className="input input-bordered" required />
+                    <input onChange={handleChange} type="email" name="email" placeholder="email" className="input input-bordered" required />
                     </div>
                     <div className="form-control">
                     <label className="label">
@@ -51,7 +79,7 @@ const Login = () => {
                     </label>
                     <input type="password" placeholder="password" name="password" className="input input-bordered" required />
                     <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                        <a href="#" onClick={()=>passwordReset(email)} className="label-text-alt link link-hover">Forgot password?</a>
                         <h3 >New Here..? <Link className="text-success font-bold"  to="/register">Create An Account</Link></h3>
                     </label>
                     </div>

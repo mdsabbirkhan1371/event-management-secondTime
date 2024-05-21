@@ -1,16 +1,44 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/small-pic/logo.png'
 import './NavBar.css'
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
 
+    const {user,logOut}=useContext(AuthContext)
+
+    const handleLogout=()=>{
+        logOut()
+    }
+
     const naveLinks =<>
-        <li><NavLink to="/">HOME</NavLink></li>
-        <li><NavLink to="/about">ABOUT</NavLink></li>
-        <li><NavLink to="/events">EVENTS</NavLink></li>
-        <li><NavLink to="/speaker">SPEAKERS</NavLink></li>
-        <li><NavLink to="/contact">CONTACT</NavLink></li>
-        <li><NavLink to="/login">LOGIN</NavLink></li>
+
+        {
+            user ?
+            <>
+            
+                <li><NavLink to="/">HOME</NavLink></li>
+                <li><NavLink to="/about">ABOUT</NavLink></li>
+                <li><NavLink to="/events">EVENTS</NavLink></li>
+                <li><NavLink to="/speaker">SPEAKERS</NavLink></li>
+                <li><NavLink to="/contact">CONTACT</NavLink></li>
+            </>
+
+            :
+            <>
+                <li><NavLink to="/">HOME</NavLink></li>
+                <li><NavLink to="/about">ABOUT</NavLink></li>
+                <li><NavLink to="/events">EVENTS</NavLink></li>
+                <li><NavLink to="/speaker">SPEAKERS</NavLink></li>
+                <li><NavLink to="/contact">CONTACT</NavLink></li>
+                <li><NavLink to="/register">Register</NavLink></li>
+            </>
+            
+            
+
+        }
+        
         
 
     </>
@@ -34,14 +62,20 @@ const Navbar = () => {
                     }
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul id="sidebar" className="menu menu-horizontal px-1">
+                    <ul id="sidebar" className="menu menu-horizontal px-1 font-bold hover:text-blue-700">
                     {
                         naveLinks
                     }
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    {
+                        user?.emailVerified? <button onClick={handleLogout} className="btn btn-outline btn-secondary font-extrabold">Logout</button>
+                        :
+                        <button className="btn btn-outline btn-secondary font-extrabold">
+                            <Link to='/login'>Login</Link></button>
+                        
+                    }
                 </div>
         </div>
         

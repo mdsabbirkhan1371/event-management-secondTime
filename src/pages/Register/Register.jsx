@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
+import { sendEmailVerification } from "firebase/auth";
 
 
 const Register = () => {
@@ -28,10 +29,14 @@ const Register = () => {
             createUser(email,password)
             .then(res=>{
                 console.log(res.user)
+                const user = res.user;
                 if(res.user===res.user){
                     setSuccess('Created Account Successfully')
                     toast('Created Account Successfully')
                 }
+
+                // send email verification to user 
+                sendEmailVerification(user)
                 
             })
             .catch(error=>{
