@@ -8,9 +8,6 @@ import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const BookingCard = () => {
-
-    
-
    
 const events = useLoaderData()
 const {id}=useParams()
