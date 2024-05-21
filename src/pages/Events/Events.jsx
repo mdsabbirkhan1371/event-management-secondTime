@@ -15,9 +15,10 @@ const Events = () => {
     
     return (
         
-        <div className="my-12">
-            <h2 className="text-5xl font-bold text-center my-12 underline">POPULAR EVENT</h2>
-
+        <div>
+            
+            <h2 className="text-4xl border-b font-bold text-center my-12">POPULAR EVENT</h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
                 {

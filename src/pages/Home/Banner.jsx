@@ -9,7 +9,8 @@ import MySwiper from '../MySwiper/MySwiper'
 const Banner = () => {
 
     const style ={
-        backgroundColor: "rgb(254, 202 ,202)"       
+        // backgroundColor: "rgb(254, 202 ,202)"   
+        backgroundColor: "indigo"    
     }
     
     return (

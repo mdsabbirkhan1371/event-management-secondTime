@@ -2,7 +2,7 @@ import logo from '../../assets/small-pic/logo.png'
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer p-10 bg-base-200 text-base-content my-12">
   <aside>
     <img src={logo} alt="" />
     <p>Event Lab Ltd.<br/>Providing reliable Event Service since 1992</p>
