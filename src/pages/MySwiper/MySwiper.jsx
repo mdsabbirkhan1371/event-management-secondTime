@@ -16,6 +16,8 @@ import { BsPinMap } from "react-icons/bs";
 
 // Use the Swiper modules
 const MySwiper = () => {
+
+    
   return (
     <Swiper
       modules={[Navigation, Pagination]}
@@ -32,7 +34,7 @@ const MySwiper = () => {
                                 <MdOutlineDateRange />
                                 <h3 className='ml-2 font-semibold'>January 21,2024</h3>
                             </div>
-                            <div className='text-5xl font-extrabold'>
+                            <div className='text-4xl font-extrabold'>
                                 <h2>EVENTS,MEETUPS & </h2>
                                 <h2 className='text-red-700'>CONFERENCES</h2>
                                 
@@ -76,7 +78,7 @@ const MySwiper = () => {
                                 <MdOutlineDateRange />
                                 <h3 className='ml-2 font-semibold'>January 21,2024</h3>
                             </div>
-                            <div className='text-5xl font-extrabold'>
+                            <div className='text-4xl font-extrabold'>
                                 <h2>EVENTS,MEETUPS & </h2>
                                 <h2 className='text-red-700'>CONFERENCES</h2>
                                 
@@ -118,7 +120,7 @@ const MySwiper = () => {
                                 <MdOutlineDateRange />
                                 <h3 className='ml-2 font-semibold'>January 21,2024</h3>
                             </div>
-                            <div className='text-5xl font-extrabold'>
+                            <div className='text-4xl font-extrabold'>
                                 <h2>EVENTS,MEETUPS & </h2>
                                 <h2 className='text-red-700'>CONFERENCES</h2>
                                 

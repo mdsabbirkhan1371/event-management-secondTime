@@ -46,8 +46,13 @@ const Register = () => {
             })
             
     }
+
+    const style={
+        backgroundColor:"indigo"
+    }
+    
     return (
-        <div className="hero bg-red-200  font-medium">
+        <div style={style} className="hero font-medium">
             
             <form onSubmit={handleRegister} className="card-body md:w-1/2 text-cyan-600 my-24">
                 <h3 className="text-3xl font-bold">Please Register to Your Account....</h3>

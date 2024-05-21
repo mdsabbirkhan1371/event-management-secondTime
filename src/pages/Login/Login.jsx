@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -11,6 +11,11 @@ const Login = () => {
     const {signIn,setError,error,resetPassword}=useContext(AuthContext)
 
     const [email,setEmail]=useState('')
+
+    const navigate = useNavigate()
+
+
+    // password reset 
 
     const handleChange =(e)=>{
             const email = e.target.value;
@@ -28,7 +33,9 @@ const Login = () => {
         
     }
 
-
+        const style={
+             backgroundColor:"indigo"
+            }
 
     const handleSignIn =(e)=>{
         e.preventDefault()
@@ -49,6 +56,8 @@ const Login = () => {
             else{
                 e.target.reset()
                 toast('Login Successful')
+                navigate('/')
+                
             }
 
             console.log(user)
@@ -63,7 +72,7 @@ const Login = () => {
     }
 
     return (
-        <div className="hero bg-red-200  font-medium ">
+        <div style={style} className="hero  font-medium ">
             
             <form onSubmit={handleSignIn} className="card-body md:w-1/2 text-cyan-600 my-24">
                 <h3 className="text-3xl font-bold">Please Login to Your Account....</h3>

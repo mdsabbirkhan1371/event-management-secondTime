@@ -17,7 +17,7 @@ const Events = () => {
         
         <div>
             
-            <h2 className="text-4xl border-b font-bold text-center my-12">POPULAR EVENT</h2>
+            <h2 className="text-4xl border-b font-bold text-center my-12">POPULAR__EVENTS</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
 
