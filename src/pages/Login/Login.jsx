@@ -57,12 +57,7 @@ const Login = () => {
                 e.target.reset()
                 toast('Login Successful')
                 navigate('/')
-                
             }
-
-            console.log(user)
-            console.log(user)
-            
             
         })
         .catch(error=>{
