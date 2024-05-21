@@ -8,6 +8,7 @@ import Events from "../../pages/Events/Events";
 import Speaker from "../../pages/Speaker/Speaker";
 import Contact from "../../pages/Contact/Contact";
 import Register from "../../pages/Register/Register";
+import BookingCard from "../../pages/Booking/BookingCard/BookingCard";
 
 
 const router = createBrowserRouter([
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
         {
             path:'/register',
             element:<Register></Register>
+        },
+        {
+            path:'/booking/:id',
+            element:<BookingCard></BookingCard>,
+            loader:()=>fetch('/events.json')
         }
     ]
   },

@@ -11,26 +11,32 @@ const AuthProvider = ({children}) => {
 
     const [success,setSuccess]=useState('')
 
+    const [loader,setLoader]=useState(true)
+
     // create user with email and password 
     const createUser =(email,password)=>{
+        setLoader(true)
         return  createUserWithEmailAndPassword(auth,email,password)
     }
 
     // sign in user 
 
     const signIn =(email,password)=>{
+        setLoader(true)
         return signInWithEmailAndPassword(auth,email,password)
     }
 
     // logout user 
 
     const logOut =()=>{
+        setLoader(true)
         return signOut(auth)
     }
 
     // reset password 
 
     const resetPassword =(email)=>{
+        setLoader(true)
         return sendPasswordResetEmail(auth,email)
     }
 
@@ -41,6 +47,8 @@ const AuthProvider = ({children}) => {
         const unSubscribe = onAuthStateChanged(auth,currentUser=>{
             console.log(currentUser)
                setUser(currentUser)
+            setLoader(false)
+
         })
         return ()=>{
             unSubscribe()
@@ -57,7 +65,9 @@ const AuthProvider = ({children}) => {
         setError,
         setSuccess,
         success,
-        setUser
+        setUser,
+        loader,
+        setLoader
     }
     return (
         <AuthContext.Provider value={data}>

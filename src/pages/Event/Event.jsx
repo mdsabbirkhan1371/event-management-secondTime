@@ -7,7 +7,7 @@ import './Event.css'
 
 const Event = ({event}) => {
 
-    const {title,date,address,seat,img,id}=event;
+    const {title,date,address,seat,img,id,description}=event;
 
     return (
         <div className="card w-96 bg-base-100 shadow-xl font-semibold  hover:translate-y-10 duration-700">
@@ -30,7 +30,10 @@ const Event = ({event}) => {
                             <h4 className="ml-2">{address}</h4>
                         </div>
                     </div>
-                    <h2 className="card-title">{title}</h2>
+                    <div>
+                        <h2 className="card-title">{title}</h2>
+                        
+                    </div>
                     
                         <div className="card-actions">
                             <Link to={`/booking/${id}`} className="underline text-red-700">Book Now</Link>
