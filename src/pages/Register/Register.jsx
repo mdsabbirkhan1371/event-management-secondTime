@@ -1,11 +1,50 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
 
 
 const Register = () => {
+
+    const {createUser,setSuccess,success,error,setError}=useContext(AuthContext)
+    
+    const handleRegister=(e)=>{
+            e.preventDefault()
+            const data = new FormData(e.target)
+            console.log(data)
+            const email = data.get('email')
+            const name = data.get('name')
+            const password = data.get('password')
+            const photo =data.get('photo')
+
+            console.log(name,email,password,photo)
+
+            // clean error and success data from ui
+
+            setError('')
+            setSuccess('')
+
+            // create user with email and password 
+            createUser(email,password)
+            .then(res=>{
+                console.log(res.user)
+                if(res.user===res.user){
+                    setSuccess('Created Account Successfully')
+                    toast('Created Account Successfully')
+                }
+                
+            })
+            .catch(error=>{
+                console.log(error)
+                setError(error.message)
+                toast(error.message)
+            })
+            
+    }
     return (
         <div className="hero bg-red-200  font-medium">
             
-            <form className="card-body md:w-1/2 text-cyan-600">
+            <form onSubmit={handleRegister} className="card-body md:w-1/2 text-cyan-600 my-24">
                 <h3 className="text-3xl font-bold">Please Register to Your Account....</h3>
                     <div className="form-control">
                     <label className="label">
@@ -36,12 +75,17 @@ const Register = () => {
                     </label>
                     </div>
                     <div className="form-control mt-6">
-                    <button className="btn btn-active btn-secondary">Register</button>
-
-
-
+                        <button className="btn btn-active btn-secondary">Register</button>
                     </div>
+
+                    {
+                        <p className="text-blue-700">{success}</p>
+                    }
+                    {
+                        <p className="text-red-700">{error}</p>
+                    }
                 </form>
+                <ToastContainer></ToastContainer>
         </div>
     );
 };
