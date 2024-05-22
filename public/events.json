@@ -5,7 +5,7 @@
     "category": "Business",
     "address": "1356 Broadway, New York",
     "date": "2024-09-15",
-    "img": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-1-370x247.jpg",
+    "img": "../src/assets/events-picture/image1.jpg",
     "seat":500
   },
   {
