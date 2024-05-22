@@ -36,7 +36,7 @@ const {loader} =useContext(AuthContext)
 
             <div className="card w-96 bg-base-100 shadow-xl font-semibold mx-auto mb-24">
                         <figure>
-                            <img className="relative rounded-x-lg mx-auto" src={event.img} alt="Shoes" />
+                            <img className="relative rounded-x-lg mx-auto" src={event.img} alt="image" />
                         </figure>
                         
                         <h3 className="bg-red-700 w-full p-4 rounded-b-lg absolute bottom-40 left-0 flex items-center font-medium">
